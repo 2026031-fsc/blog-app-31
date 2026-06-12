@@ -1,0 +1,103 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #111111;
+    line-height: 1.8;
+    font-weight: 400;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: rgb(181, 48, 103);
+}
+
+a {
+    color: #1b7360;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #888888; /* ホバー時に少し薄く */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 0;
+}
+.main {
+    padding-left: 50px;
+    flex: 1;
+}
+
+aside {
+    width: 20%;
+    border-right: solid;
+}
+
+.line {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.title {
+    display: block;
+}
+
+.blog {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.note {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+}
+
+.notes{
+    color: black;
+}
+
+.text {
+    width: 500px;
+    height: 300px;
+}
+
+.button{
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid #111111;
+    padding: 12px 35px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+th {
+    text-align: left;
+    font-size: 12px;
+    color: #888888;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #111111;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>ブログ一覧</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>BLUG</h2>
+        <button class="button" onclick="location.href='/new'">POST NEW</button>
+    </div>
+    <hr>
+
+    <div class="line">
+        <aside id="navi">
+            <ul style="list-style: none;">
+                <li><a href="/all">ホーム ~^..^~</a></li>
+            </ul>
+        </aside>
+
+        <div class="main">
+            <h2>ブログ一覧</h2>
+            <table>
+                <tr>
+                    <th>タイトル</th>
+                </tr>
+                <tr th:each="blog : ${blogs}">
+                    <td><a th:href="@{/blogs/{id}(id=${blog.id})}" th:text="${blog.title}">タイトル</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

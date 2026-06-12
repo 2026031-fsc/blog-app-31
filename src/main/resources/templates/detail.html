@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="/css/style.css">
+
+<body>
+
+  <div class="header">
+    <h2>BLUG</h2>
+    <button class="button" onclick="location.href='/new'">POST NEW</button>
+  </div>
+  <hr>
+
+  <div class="line">
+    <aside id="navi">
+      <ul style="list-style: none;">
+        <li><a href="/all">ホーム ~^..^~</a></li>
+      </ul>
+    </aside>
+    <div class="blog">
+      <h1 class="title" th:text="${blog.title}">タイトル</h1>
+      <p th:text="${blog.notes}" class="notes">本文</p>
+    </div>
+  </div>
+</body>
+
+</html>
